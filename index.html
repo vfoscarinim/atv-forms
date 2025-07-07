@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Usuário</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="form-container">
+    <form id="userForm" method="POST" action="/submit_form" enctype="multipart/form-data">
+      
+      <!-- Nome Completo -->
+      <label for="fullName">Nome Completo</label>
+      <input
+        type="text"
+        id="fullName"
+        name="fullName"
+        placeholder="Ex: Maria Silva"
+        required
+      >
+
+      <!-- E-mail -->
+      <label for="email">E‑mail</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="exemplo@dominio.com"
+        required
+      >
+
+      <!-- Senha -->
+      <label for="password">Senha</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Mínimo 8 caracteres"
+        minlength="8"
+        required
+      >
+
+      <!-- Confirmar Senha -->
+      <label for="confirmPassword">Confirmar Senha</label>
+      <input
+        type="password"
+        id="confirmPassword"
+        name="confirmPassword"
+        placeholder="Repita a senha"
+        minlength="8"
+        required
+      >
+
+      <!-- Gênero -->
+      <fieldset class="radio-group">
+        <legend>Gênero</legend>
+        <label>
+          <input type="radio" name="gender" value="masculino" required> Masculino
+        </label>
+        <label>
+          <input type="radio" name="gender" value="feminino"> Feminino
+        </label>
+        <label>
+          <input type="radio" name="gender" value="outro"> Outro
+        </label>
+      </fieldset>
+
+      <!-- Interesses -->
+      <fieldset class="checkbox-group">
+        <legend>Interesses</legend>
+        <label>
+          <input type="checkbox" name="interests" value="esportes"> Esportes
+        </label>
+        <label>
+          <input type="checkbox" name="interests" value="música"> Música
+        </label>
+        <label>
+          <input type="checkbox" name="interests" value="tecnologia"> Tecnologia
+        </label>
+      </fieldset>
+
+      <!-- Foto de Perfil -->
+      <label for="profilePic">Enviar Foto de Perfil</label>
+      <input
+        type="file"
+        id="profilePic"
+        name="profilePic"
+        accept="image/*"
+      >
+
+      <!-- País de Origem -->
+      <label for="country">País de Origem</label>
+      <select id="country" name="country" required>
+        <option value="">Selecione...</option>
+        <option value="br">Brasil</option>
+        <option value="us">Estados Unidos</option>
+        <option value="ca">Canadá</option>
+        <option value="pt">Portugal</option>
+        <option value="jp">Japão</option>
+      </select>
+
+      <!-- Botão -->
+      <button type="submit">Cadastrar</button>
+
+      <!-- Botão de reset -->
+     <button type="button" id="resetBtn" class="reset-btn">Limpar dados</button>
+    </form>
+  </main>
+
+  <!-- Script com validações -->
+  <script src="script.js"></script>
+</body>
+</html>

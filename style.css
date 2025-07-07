@@ -1,0 +1,91 @@
+/* styles.css */
+
+/* Fonte padrão que você costuma usar */
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /* Fonte serifada */
+  background-color: #f4f4f4; /* Cor de fundo suave */
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove padding padrão */
+}
+
+/* Centraliza o formulário na tela */
+.form-container {
+  max-width: 480px;            /* Largura máxima */
+  margin: 40px auto;           /* Centralização horizontal + margem superior */
+  background-color: #fff;      /* Fundo branco */
+  padding: 24px;               /* Espaçamento interno */
+  border-radius: 6px;          /* Cantos arredondados */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estiliza rótulos */
+label {
+  display: block;              /* Quebra de linha */
+  margin-top: 12px;            /* Espaço acima */
+  font-weight: bold;           /* Destaque */
+}
+
+/* Estiliza campos de entrada e seleção */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="file"],
+select {
+  width: 100%;                 /* Ocupa toda a largura */
+  padding: 8px;                /* Espaço interno */
+  margin-top: 4px;             /* Espaço entre label e input */
+  border: 1px solid #ccc;      /* Borda cinza */
+  border-radius: 4px;          /* Cantos arredondados */
+  box-sizing: border-box;      /* Inclui padding na largura total */
+}
+
+/* Remove a largura forçada dos groups de rádio/checkbox */
+fieldset {
+  border: none;                /* Remove borda padrão */
+  margin: 12px 0 0 0;          /* Espaço superior */
+  padding: 0;                  /* Remove padding */
+}
+
+/* Espaçamento para legend */
+legend {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+/* Estiliza o botão de envio */
+button[type="submit"] {
+  display: block;              /* Quebra de linha */
+  width: 100%;                 /* Ocupa toda a largura */
+  margin-top: 20px;            /* Espaço acima */
+  padding: 10px;               /* Espaçamento interno */
+  background-color: #1976d2;   /* Azul primário */
+  color: #fff;                 /* Texto branco */
+  border: none;                /* Remove borda */
+  border-radius: 4px;          /* Cantos arredondados */
+  cursor: pointer;             /* Muda cursor */
+  font-size: 16px;             /* Tamanho do texto */
+  transition: background 0.3s; /* Animação suave */
+}
+
+/* Botão de limpar */
+.reset-btn {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #d42623; /* Vermelho */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.reset-btn:hover {
+  background-color: #b71c1c; /* Vermelho mais escuro */
+}
+
+/* Mudança de cor ao passar o mouse */
+button[type="submit"]:hover {
+  background-color: #125aa0; /* Azul mais escuro */
+}
