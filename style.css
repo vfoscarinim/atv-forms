@@ -1,4 +1,20 @@
 /* styles.css */
+/* Estilo do cabeçalho */
+.form-header {
+  text-align: center;        /* Centraliza o texto */
+  padding: 24px 16px 8px;    /* Espaçamento interno */
+  background-color: #1976d2; /* Fundo azul igual ao botão */
+  color: white;              /* Texto branco */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-bottom: 4px solid #125aa0; /* Linha de destaque abaixo */
+}
+
+.form-header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+
 
 /* Fonte padrão que você costuma usar */
 body {
